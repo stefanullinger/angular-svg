@@ -1,0 +1,26 @@
+{
+  "name": "angular-svg",
+  "version": "0.1.0",
+  "homepage": "https://github.com/sullinger/angular-svg",
+  "authors": [
+    "Stefan Ullinger <stefan@slicemenice.de>"
+  ],
+  "description": "",
+  "keywords": [
+    "AngularJS",
+    "SVG"
+  ],
+  "license": "MIT",
+  "main": [
+    "sources/styles/*.scss",
+    "sources/**/*.module.js",
+    "sources/**/*"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
