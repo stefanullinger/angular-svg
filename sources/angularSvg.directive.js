@@ -7,13 +7,11 @@
 	directiveDefinition.$inject = [ '$rootScope' ];
 
 	function directiveDefinition( $rootScope ) {
-		var projectClassPrefix = $rootScope.projectClassPrefix || '';
-
 		return {
 			link: link,
 			replace: true,
 			restrict: 'AE',
-			template: '<div class="' + projectClassPrefix + 'angularSvg"></div>',
+			template: '<div class="angularSvg"></div>',
 			type: 'svg'
 		};
 
@@ -30,7 +28,7 @@
 			function initialize( symbolSource ) {
 				var symbol = angular.element( symbolSource ).clone();
 				var svg = angular.element( document.createElementNS( 'http://www.w3.org/2000/svg', 'svg' ) );
-				var svgContent = angular.element( '<div class="' + projectClassPrefix + 'angularSvg_content"></div>' );
+				var svgContent = angular.element( '<div class="angularSvg_content"></div>' );
 
 				svg.append( symbol.children() );
 				svg[0].setAttribute( 'viewBox', symbol[0].getAttribute( 'viewBox' ) );
