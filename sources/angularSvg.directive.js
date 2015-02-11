@@ -16,7 +16,7 @@
 		};
 
 		function link( scope, element, attrs ) {
-			var symbolSource = document.getElementById( 'svg-' + attrs.ref );
+			var symbolSource = document.getElementById( attrs.ref );
 
 			if ( symbolSource ) {
 				initialize( symbolSource );
